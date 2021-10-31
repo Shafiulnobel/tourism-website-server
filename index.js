@@ -53,11 +53,6 @@ async function run(){
         res.send(orders);
     })
 
-    // get api for finding signle user's order
-    // app.get('/orders/:mail',(req,res)=>{
-    //     console.log(req.params)
-    // })
-    //post api(order)
     app.post('/orders',async(req,res)=>{
          const order=req.body;
         console.log('hit the post api',order)
